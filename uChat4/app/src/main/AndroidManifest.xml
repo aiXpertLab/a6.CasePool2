@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reapex.sv">
+
+    <!-- Normal  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- Dangerous  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 头像需要 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.huawei.mlkit.asr.permission" />
+
+    <permission
+        android:name="com.huawei.mlkit.asr.permission"
+        android:label="ASR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="com.reapex.sv.Welcome1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity            android:name=".Welcome2Earth"/>
+        <activity            android:name=".Login"
+            android:theme="@style/ImageTranslucentTheme" />
+        <activity            android:name=".Register"/>
+        <activity            android:name=".Welcome3Main"/>
+        <activity            android:name=".frag3me.AccountSecurity"/>
+        <activity            android:name=".frag3me.Frag3MeProfile"/>
+        <activity            android:name=".frag3me.CloseAccount"/>
+        <activity            android:name=".frag3me.MeMore"/>
+        <activity            android:name=".frag3me.ChangeName"/>
+        <activity            android:name=".frag3me.MeMoreRegion"/>
+        <activity            android:name=".frag3me.MeMoreSignature"/>
+        <activity            android:name=".frag3me.MeMoreGender"/>
+        <activity            android:name=".frag3me.About"/>
+        <activity            android:name=".MyWeb"/>
+        <activity            android:name=".frag3me.SVQRCode"/>
+        <activity            android:name=".frag3me.Intro"/>
+        <activity            android:name=".frag3me.ModifyPasswordActivity"/>
+        <activity
+            android:name=".asr.AsrAudioActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|keyboardHidden|orientation"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="install_channel"
+            android:value="HW101">
+        </meta-data>
+    </application>
+
+</manifest>
