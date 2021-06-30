@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ASRPrototype</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="str_ok">ok</string>
+    <string name="error_no_network">no networkd</string>
+    <string name="error_no_understand">no understand</string>
+    <string name="error_service_unavailable">no service</string>
+</resources>
