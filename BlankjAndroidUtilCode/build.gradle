@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ConfigUtils.init(gradle)
+    repositories {
+        // use for debug plugin local
+        if (Config.depConfig.plugin_bus.useLocal || Config.depConfig.plugin_api.useLocal) {
+            maven() { url uri("${project.rootDir.path}/mavenLocal") }
+        }
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        for (def entrySet : ConfigUtils.getApplyPlugins().entrySet()) {
+            classpath entrySet.value.dep
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        maven() { url uri("${project.rootDir.path}/mavenLocal") }
+        maven { url "https://jitpack.io" }
+        google()
+        jcenter()
+    }
+
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+
+        resolutionStrategy.eachDependency {
+            if (it.requested.group == 'com.android.support'
+                    && !it.requested.name.contains('multidex')) {
+                it.useVersion Config.supportVersion
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
