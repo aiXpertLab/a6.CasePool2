@@ -1,0 +1,17 @@
+[
+  {
+    "name": "weibo",
+    "link": "https://weibo.com/seeingvoice",
+    "image": "images/social/weibo.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "https://facebook.com/aihearing",
+    "image": "images/social/facebook.svg"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/aihearing33",
+    "image": "images/social/twitter.svg"
+  }
+]
