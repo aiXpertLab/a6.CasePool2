@@ -1,0 +1,27 @@
+main:
+  - name: "Services"
+    url: "/services/"
+    weight: 2
+  - name: "Team"
+    url: "/team/"
+    weight: 3
+  - name: "About"
+    url: "/about/"
+    weight: 4
+  - name: "Contact"
+    url: "/contact/"
+    weight: 5
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2
+  - name: "Privacy"
+    url: "/privacy/"
+    weight: 3
+  - name: "Terms"
+    url: "/terms/"
+    weight: 4
