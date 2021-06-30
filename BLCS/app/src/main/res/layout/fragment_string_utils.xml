@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_line">
+
+    <EditText
+        android:id="@+id/et_input"
+        style="@style/EditText_text"
+        android:hint="@string/input_str"
+        android:singleLine="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/bottom_space">
+
+        <LinearLayout
+            style="@style/Lin_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_getTrimStr"
+                style="@style/match_wrap"
+                android:text="@string/getTrimStr" />
+
+            <TextView
+                android:id="@+id/tv_getTrimStr"
+                style="@style/standerd_text"
+                />
+
+            <Button
+                android:id="@+id/btn_getNoBlanStr"
+                style="@style/match_wrap"
+                android:text="@string/getNoBlanStr" />
+
+            <TextView
+                android:id="@+id/tv_getNoBlanStr"
+                style="@style/standerd_text" />
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_getLengthStr"
+                    android:layout_weight="1"
+                    style="@style/match_wrap"
+                    android:text="@string/getLengthStr" />
+
+                <CheckBox
+                    android:id="@+id/cb_getLengthStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_trim" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_getIsNotEmptyStr"
+                    android:layout_weight="1"
+                    style="@style/match_wrap"
+                    android:text="@string/IsNotEmptyStr" />
+
+                <CheckBox
+                    android:id="@+id/cb_getIsNotEmptyStr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_trim" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_getIsPhoneStr"
+                style="@style/match_wrap"
+                android:text="@string/IsPhoneStr" />
+
+            <Button
+                android:id="@+id/btn_getIsEmailStr"
+                style="@style/match_wrap"
+                android:text="@string/IsEmailStr" />
+
+
+            <Button
+                android:id="@+id/btn_getIsNumerStr"
+                style="@style/match_wrap"
+                android:text="@string/IsNumerStr" />
+
+
+
+            <Button
+                android:id="@+id/btn_getNumberOrAlpha"
+                style="@style/match_wrap"
+                android:text="@string/IsNumberOrAlpha" />
+
+
+            <Button
+                android:id="@+id/btn_isIDCard"
+                style="@style/match_wrap"
+                android:text="@string/isIDCard" />
+
+
+            <Button
+                android:id="@+id/btn_isUrl"
+                style="@style/match_wrap"
+                android:text="@string/isUrl" />
+
+            <Button
+                android:id="@+id/btn_isFilePathExist"
+                style="@style/match_wrap"
+                android:text="@string/isFilePathExist" />
+
+            <Button
+                android:id="@+id/btn_getNumber"
+                style="@style/match_wrap"
+                android:text="@string/getNumber" />
+
+            <TextView
+                android:id="@+id/tv_getNumber"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_getCorrectUrl"
+                style="@style/match_wrap"
+                android:text="@string/getCorrectUrl" />
+
+            <TextView
+                android:id="@+id/tv_getCorrectUrl"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_getCorrectPhone"
+                style="@style/match_wrap"
+                android:text="@string/getCorrectPhone" />
+
+            <TextView
+                android:id="@+id/tv_getCorrectPhone"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_getCorrectEmail"
+                style="@style/match_wrap"
+                android:text="@string/getCorrectEmail" />
+
+            <TextView
+                android:id="@+id/tv_getCorrectEmail"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_getPrice"
+                style="@style/match_wrap"
+                android:text="@string/getPrice" />
+
+            <TextView
+                android:id="@+id/tv_getPrice"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_stringToDouble"
+                style="@style/match_wrap"
+                android:text="@string/stringToDouble" />
+
+            <TextView
+                android:id="@+id/tv_stringToDouble"
+                style="@style/standerd_text" />
+
+            <Button
+                android:id="@+id/btn_stringToInt"
+                style="@style/match_wrap"
+                android:text="@string/stringToInt" />
+
+            <TextView
+                android:id="@+id/tv_stringToInt"
+                style="@style/standerd_text" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

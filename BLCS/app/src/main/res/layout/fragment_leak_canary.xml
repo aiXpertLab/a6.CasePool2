@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_wrap"
+    android:orientation="vertical"
+    android:padding="@dimen/space_line">
+
+    <TextView
+        style="@style/wrap_wrap"
+        android:text="实现步骤："
+        android:textSize="@dimen/standard_work" />
+
+    <ScrollView
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/space_line2"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/Lin_vertical">
+            <TextView
+                style="@style/wrap_wrap"
+                android:text="一、目录" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_dependconfig"/>
+            <TextView
+                style="@style/wrap_wrap"
+                android:text="1、新建配置文件" />
+            <ImageView
+                style="@style/match_wrap"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_dependconfig1"/>
+            <TextView
+                style="@style/wrap_wrap"
+                android:text="2、在根build.gradle添加apply from: 'xxx.gradle'" />
+            <TextView
+                style="@style/wrap_wrap"
+                android:text="3、使用方式" />
+            <ImageView
+                style="@style/match_wrap"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_dependconfig2"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

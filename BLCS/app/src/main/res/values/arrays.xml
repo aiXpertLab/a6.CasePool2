@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--菜单栏-->
+    <string-array name="bottom_menu">
+        <item>@string/Tool</item>
+        <item>@string/View</item>
+        <item>@string/Other</item>
+        <item>@string/Resources</item>
+    </string-array>
+    <!--工具栏-->
+    <string-array name="Utils">
+        <item>AppUtils</item>
+        <item>BitmapUtils</item>
+        <item>EditTextUtils</item>
+        <item>IntentUtils</item>
+        <item>StringUtils</item>
+        <item>ScreenUtils</item>
+        <item>LinView</item>
+        <item>FileUtils</item>
+        <item>LinCommon</item>
+        <item>LinCleanData</item>
+        <item>LinPermission</item>
+        <item>LinNetStatus</item>
+        <item>LinPhone</item>
+    </string-array>
+    <!--View-->
+    <string-array name="View">
+        <item>仿微信功能及控件</item>
+        <item>BottomNavigationView</item>
+        <item>RecyclerView</item>
+        <item>DialogFragment</item>
+        <item>toolbar</item>
+        <item>RxToast</item>
+        <item>转盘小游戏</item>
+        <item>跑马灯/水波纹/标签</item>
+        <item>侧滑菜单/悬浮按钮</item>
+        <item>ViewPager指示器</item>
+        <item>Viewpage</item>
+        <item>OpenGl三角形</item>
+        <item>OpenGl矩形</item>
+        <item>常用Dialog</item>
+        <item>进度条</item>
+        <item>蛛网等级及颜色选取</item>
+        <item>Banner轮播图</item>
+        <item>通知NotificationCompat</item>
+        <item>选择器Picker</item>
+        <item>标签列表LabelList</item>
+        <item>声音与震动</item>
+        <item>PopupWindow</item>
+        <item>放大镜</item>
+        <item>刮刮卡</item>
+        <item>腾讯开源UI库《QMUI_Android》</item>
+        <item>开源图表库《MPAndroidChart》</item>
+        <item>条形码/二维码</item>
+        <item>CoordinatorLayout</item>
+        <item>悬浮窗口</item>
+    </string-array>
+    <!--other-->
+    <string-array name="Other">
+        <item>博客</item>
+        <item>版本更新</item>
+        <item>不常用功能</item>
+        <item>全局异常捕获</item>
+        <item>依赖配置</item>
+        <item>Rxjava+Retrofit封装</item>
+        <item>调用系统功能</item>
+        <item>SQLite</item>
+        <item>Jetpack架构组件</item>
+
+    </string-array>
+    <!--Resources-->
+    <string-array name="Resources">
+        <item>学习语言</item>
+        <item>学习网站</item>
+        <item>GitHub资源归类</item>
+    </string-array>
+
+    <!--BottomNavigationView-->
+    <string-array name="BottomNavigationView">
+        <item>工具</item>
+        <item>View</item>
+        <item>其他</item>
+        <item>设置</item>
+        <item>信息</item>
+    </string-array>
+
+    <!--小游戏名称-->
+    <string-array name="games">
+        <item>爬山</item>
+        <item>游戏</item>
+        <item>睡觉</item>
+        <item>唱歌</item>
+        <item>电影</item>
+        <item>逛街</item>
+        <item>吃饭</item>
+        <item>旅游</item>
+        <item>单车</item>
+        <item>野炊</item>
+        <item>打球</item>
+        <item>看书</item>
+    </string-array>
+    <!--小游戏图片-->
+
+    <string-array name="imgs">
+        <item>img_climb</item>
+        <item>img_game</item>
+        <item>img_sleep</item>
+        <item>img_sing</item>
+        <item>img_movies</item>
+        <item>img_shopping</item>
+        <item>img_eat</item>
+        <item>img_travel</item>
+        <item>img_bike</item>
+        <item>img_picnic</item>
+        <item>img_play</item>
+        <item>img_book</item>
+    </string-array>
+    <!--Recycler动画-->
+    <string-array name="Recycler_Animation">
+        <item>Alphaln</item>
+        <item>Scaleln</item>
+        <item>SlidelnBottom</item>
+        <item>SlidelnLeft</item>
+        <item>SlidenlnRight</item>
+        <item>Custom</item>
+    </string-array>
+
+    <!--MagicIndicator指示器-->
+    <string-array name="MagicIndicator">
+        <item>ScrollableTab</item>
+        <item>FixedTab</item>
+        <item>DynamicTab</item>
+        <item>NoTabOnlyIndicator</item>
+        <item>BadgeTab</item>
+        <item>FragmentContainer</item>
+        <item>LoadCustomLayout</item>
+        <item>CustomNavigator</item>
+    </string-array>
+
+
+    <!--仿微信功能列表-->
+    <string-array name="WeChat_Function">
+        <item>字体大小</item>
+        <item>存储空间</item>
+        <item>多语言</item>
+        <item>地区选择</item>
+
+    </string-array>
+
+    <!--博客-->
+    <string-array name="BLOGS">
+        <item>Android Jetpack架构组件之ViewModel入门到精通</item>
+        <item>Android Jetpack架构组件之LiveData</item>
+        <item>Android Jetpack架构组件之Lifecycle源码分析</item>
+        <item>Android Jetpack架构组件之Lifecycle入门</item>
+        <item>Android Espresso入门到自动搞定</item>
+        <item>Android ButterKnife入门到放弃</item>
+        <item>Android 10文档阅读总结</item>
+        <item>Android 学习资源收集</item>
+        <item>Android 自定义控件基础</item>
+        <item>Android ObjectBox开源数据库框架学习笔记</item>
+        <item>Android 数据库知识回顾</item>
+        <item>Android 《Android移动性能实战》学习笔记</item>
+        <item>Android 下载安装应用APK封装（适配8.0）</item>
+        <item>Android Notification通知简单封装（适配8.0）</item>
+        <item>Android 仿RxDialog自定义DialogFragment</item>
+        <item>Android 获取App应用、缓存、数据等大小适配8.0（仿微信存储空间）</item>
+        <item>Android 仿微信多语言切换</item>
+        <item>Android 仿微信全局字体大小调整</item>
+        <item>Android JUnit单元测试</item>
+        <item>Android 初识DataBinding</item>
+        <item>Android 底部导航栏BottomNavigationView</item>
+        <item>Android Log日志封装</item>
+        <item>Android 友盟多渠道打包</item>
+        <item>Android 友盟统计集成</item>
+        <item>Android Rxjava+Retrofit网络请求框架封装（二）</item>
+        <item>Android Rxjava+Retrofit网络请求框架封装（一）</item>
+        <item>Android WebView</item>
+        <item>Java 八种排序算法总结</item>
+        <item>Java 设计模式总结</item>
+    </string-array>
+
+    <!--博客URL-->
+    <string-array name="URL_BLOGS">
+        <item>@string/URL_ViewModel</item>
+        <item>@string/URL_LiveData</item>
+        <item>@string/URL_Lifecycle2</item>
+        <item>@string/URL_Lifecycle1</item>
+        <item>@string/URL_Espresso</item>
+        <item>@string/URL_ButterKnife</item>
+        <item>@string/URL_android10</item>
+        <item>@string/URL_studyResource</item>
+        <item>@string/URL_customView</item>
+        <item>@string/URL_study03</item>
+        <item>@string/URL_study02</item>
+        <item>@string/URL_study01</item>
+        <item>@string/URL_LinDownloadAPk</item>
+        <item>@string/URL_LinNotify</item>
+        <item>@string/URL_LinCustomDialog</item>
+        <item>@string/URL_AppSizeUtils</item>
+        <item>@string/URL_MultiLanguage</item>
+        <item>@string/URL_FontSize</item>
+        <item>@string/URL_JUnit</item>
+        <item>@string/URL_DataBinding</item>
+        <item>@string/URL_BottomNavigation</item>
+        <item>@string/URL_LOG</item>
+        <item>@string/URL_UmengPackage</item>
+        <item>@string/URL_Umeng</item>
+        <item>@string/URL_Retrofit2</item>
+        <item>@string/URL_Retrofit1</item>
+        <item>@string/URL_WebView</item>
+        <item>@string/URL_APK_Sign</item>
+        <item>@string/URL_Arithmetic</item>
+        <item>@string/URL_DesignMode</item>
+    </string-array>
+
+
+    <!--学习语言-->
+    <string-array name="LearnLanguage">
+        <item>Android官方课程</item>
+        <item>NDK</item>
+        <item>Kotlin</item>
+        <item>Java</item>
+        <item>Git</item>
+    </string-array>
+    <string-array name="Url_LearnLanguage">
+        <item>@string/Url_Android</item>
+        <item>@string/Url_NDK</item>
+        <item>@string/Url_Kotlin</item>
+        <item>@string/Url_Java</item>
+        <item>@string/Url_Git</item>
+    </string-array>
+    <!--学习网站-->
+    <string-array name="LearnWebsite">
+        <item>Google Android网站</item>
+        <item>Google Android国内版</item>
+        <item>Android Weekly</item>
+        <item>Android Hive</item>
+        <item>Android 开发工具</item>
+        <item>谷歌开发者社区</item>
+        <item>腾讯课堂</item>
+        <item>极客学院</item>
+        <item>谷粒学院</item>
+        <item>慕课网</item>
+        <item>尚硅谷</item>
+        <item>站酷</item>
+    </string-array>
+    <string-array name="Url_LearnWebsite">
+        <item>@string/Url_Google</item>
+        <item>@string/Url_GoogleChina</item>
+        <item>@string/Url_AndroidWeekly</item>
+        <item>@string/Url_AndroidHive</item>
+        <item>@string/Url_Androidtool</item>
+        <item>@string/Url_Chinagdg</item>
+        <item>@string/Url_Tx</item>
+        <item>@string/Url_JK</item>
+        <item>@string/Url_GL</item>
+        <item>@string/Url_MK</item>
+        <item>@string/Url_GG</item>
+        <item>@string/Url_zc</item>
+    </string-array>
+    <!--GitHub项目-->
+    <string-array name="GitHubSources">
+        <item>开源项目资料与配套视频</item>
+        <item>免费的计算机编程类中文书籍</item>
+        <item>Android 开源项目分类汇总</item>
+        <item>开源UI项目分类</item>
+        <item>AndroidUI库</item>
+        <item>技术面试必备CS-Notes</item>
+        <item>教你如何码出高效代码p3c</item>
+        <item>Java 工程师进阶知识</item>
+    </string-array>
+    <string-array name="Url_GitHubSources">
+        <item>@string/Url_GitDemo1</item>
+        <item>@string/Url_GitDemo2</item>
+        <item>@string/Url_GitDemo3</item>
+        <item>@string/Url_GitDemo4</item>
+        <item>@string/Url_GitDemo5</item>
+        <item>@string/Url_GitDemo6</item>
+        <item>@string/Url_GitDemo7</item>
+        <item>@string/Url_GitDemo8</item>
+    </string-array>
+    <!--RecyclerView title-->
+    <string-array name="Recycler_title">
+        <item>Animation</item>
+        <item>MultipleItem</item>
+        <item>Header/Footer</item>
+        <item>PullToRefresh</item>
+        <item>Section</item>
+        <item>EmptyView</item>
+        <item>DragAndSwipe</item>
+        <item>ItemClick</item>
+        <item>ExpandableItem</item>
+        <item>UpFetchData</item>
+    </string-array>
+
+    <!--RecyclerView Image-->
+    <string-array name="Recycler_Image">
+        <item>gv_animation</item>
+        <item>gv_multipleltem</item>
+        <item>gv_header_and_footer</item>
+        <item>gv_pulltorefresh</item>
+        <item>gv_section</item>
+        <item>gv_empty</item>
+        <item>gv_drag_and_swipe</item>
+        <item>gv_item_click</item>
+        <item>gv_expandable</item>
+        <item>gv_animation</item>
+    </string-array>
+    <!--RecyclerView Fragment-->
+    <string-array name="Recycler_fragment">
+        <item>AnimationRecycler</item>
+        <item>MultipleItemRecycler</item>
+        <item>Header/FooterRecycler</item>
+        <item>PullToRefreshRecycler</item>
+        <item>SectionRecycler</item>
+        <item>EmptyViewRecycler</item>
+        <item>DragAndSwipeRecycler</item>
+        <item>ItemClickRecycler</item>
+        <item>ExpandableItemRecycler</item>
+        <item>UpFetchDataRecycler</item>
+    </string-array>
+
+
+</resources>

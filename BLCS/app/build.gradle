@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+
+//隐藏签名信息 ======》
+def keystoreFilepath = ""
+def keystorePSW = ""
+def keystoreAlias = ""
+def keystoreAliasPSW = ""
+def keyfile = file('s.keystore.temp')
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+keystoreFilepath =properties.getProperty("keystore.path")
+
+if(keystoreFilepath){
+    keystorePSW = properties.getProperty("keystore.password")
+    keystoreAlias = properties.getProperty("keystore.alias")
+    keystoreAliasPSW = properties.getProperty("keystore.alias_password")
+    keyfile = file(keystoreFilepath)
+}
+//《======
+
+android {
+    signingConfigs {
+        release {
+            keyAlias keystoreAlias
+            keyPassword keystorePSW
+            storeFile keyfile
+            storePassword keystoreAliasPSW
+        }
+    }
+    compileSdkVersion As.compileSdkVersion
+    defaultConfig {
+        applicationId As.applicationId
+        minSdkVersion As.minSdkVersion
+        targetSdkVersion As.targetSdkVersion
+        versionCode As.versionCode
+        versionName As.versionName
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true   //排除没有引用到的资源  APK瘦身
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    多渠道打包
+    productFlavors {
+        wandoujia {}
+        xiaomi {}
+        pugongying {}
+    }
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    //    修改命名规则
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def formattedDate = new Date().format('yyyy_MM_dd')
+            outputFileName = rootProject.getName() + "-" + variant.flavorName + "-" + buildType.name + "-" + formattedDate + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk";
+        }
+    }
+
+    greendao {
+        schemaVersion 1 //数据库版本号
+        // 设置DaoMaster、DaoSession、Dao 包名
+        daoPackage 'blcs.lwb.utils.greendao'
+        targetGenDir 'src/main/java'
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+    // ========基本关联=======
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':LwbTool')
+    implementation Dp.ConstraintLayout
+    testImplementation Dp.Junit
+    androidTestImplementation Dp.Espresso
+    androidTestImplementation Dp.Uiautomator
+    annotationProcessor Dp.ButterknifeCompiler
+    implementation Dp.UmengCommon
+    implementation Dp.UmengAnalytics
+    annotationProcessor Dp.GlideCompiler
+    debugImplementation Dp.DebugDbEncrypt
+    annotationProcessor Dp.room
+
+}

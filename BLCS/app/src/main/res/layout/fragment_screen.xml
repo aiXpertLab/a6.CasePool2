@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_getScreenWidth"
+            style="@style/Button_wrap"
+            android:text="@string/getScreenWidth"/>
+        <Button
+            android:id="@+id/btn_getScreenHeight"
+            style="@style/Button_wrap"
+            android:text="@string/getScreenHeight"/>
+        <Button
+            android:id="@+id/btn_getDensity"
+            style="@style/Button_wrap"
+            android:text="@string/getDensity"/>
+        <Button
+            android:id="@+id/btn_getScaledDensity"
+            style="@style/Button_wrap"
+            android:text="@string/getScaledDensity"/>
+        <Button
+            android:id="@+id/btn_getStatusHeight"
+            style="@style/Button_wrap"
+            android:text="@string/getStatusHeight"/>
+        <Button
+            android:id="@+id/btn_getSnapShotWithStatusBar"
+            style="@style/Button_wrap"
+            android:text="@string/getSnapShotWithStatusBar"/>
+
+        <Button
+            android:id="@+id/btn_getSnapShotWithoutStatusBar"
+            style="@style/Button_wrap"
+            android:text="@string/getSnapShotWithoutStatusBar"/>
+        <Button
+            android:id="@+id/btn_getScreenSize"
+            style="@style/Button_wrap"
+            android:text="@string/getScreenSize"/>
+    </LinearLayout>
+</ScrollView>

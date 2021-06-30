@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion As.compileSdkVersion
+    defaultConfig {
+        minSdkVersion As.minSdkVersion
+        targetSdkVersion As.targetSdkVersion
+        versionCode As.versionCode
+        versionName As.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/rebound-core.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    //noinspection GradleCompatible
+    api Dp.AppcompatV7
+    api Dp.Design
+    api Dp.Recyclerview
+    api Dp.SupportV4
+    api Dp.rules
+    //测试 Junit / Uiautomator / espresso
+    testImplementation Dp.Junit
+    api Dp.rules
+    androidTestImplementation Dp.Runner
+    androidTestImplementation Dp.Espresso
+    androidTestImplementation Dp.Uiautomator
+    androidTestImplementation Dp.EspressoWeb
+    androidTestImplementation Dp.EspressoContrib
+
+    api Dp.Butterknife
+    annotationProcessor Dp.ButterknifeCompiler
+    api Dp.Agentweb
+    api Dp.Marqueeview
+    api Dp.AdapterHelper
+    debugImplementation Dp.Leakcanary
+    api Dp.NavigationBar
+    api Dp.MagicIndicator
+    api Dp.Fastjson
+    api Dp.Banner
+    api Dp.Androidsvg
+    api Dp.Glide
+    annotationProcessor Dp.GlideCompiler
+    api Dp.Retrofit2
+    api Dp.Retrofit2ConverterGson
+    api Dp.Retrofit2Rxjava2
+    api Dp.Rxlifecycle
+    api Dp.PickerView
+    api Dp.Litepal
+    api Dp.Greendao
+    debugImplementation Dp.DebugDbEncrypt
+    api Dp.Qmui
+    api Dp.MPAndroidChart
+    api Dp.Zxing
+    api Dp.LifecycleViewModel
+    api Dp.navigation
+    api Dp.navigationUI
+    api Dp.paging
+    api Dp.workManager
+}
