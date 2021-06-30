@@ -1,0 +1,33 @@
+main:
+  - name: "听测"
+    url: "/hearingworld/"
+    weight: 2
+  - name: "看见"
+    url: "/youchat/"
+    weight: 3
+  - name: "眼镜"
+    url: "/arglasses/"
+    weight: 4
+  - name: "技术支持"
+    url: "/kaldi/"
+    weight: 5
+
+footer:
+  - name: "首页"
+    url: "/"
+    weight: 1
+  - name: "团队"
+    url: "/team/"
+    weight: 2
+  - name: "关于"
+    url: "/about/"
+    weight: 3
+  - name: "联络"
+    url: "/contact/"
+    weight: 4
+  - name: "隐私政策"
+    url: "/privacy/"
+    weight: 5
+  - name: "用户协议"
+    url: "/terms/"
+    weight: 6
